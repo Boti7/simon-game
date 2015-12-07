@@ -1,0 +1,22 @@
+{
+	"name": "Simon game",
+	"launch_path": "/index.html",
+	"version": "2.0",
+	"developer": {
+		"name": "Botond Horvath",
+		"url": "http://boti7.com"
+	},
+	"description": "This is a Simon Says memory game. One or more of the four colored buttons are randomly flashed by the application, than the player have to touch them in the same order.",
+	"icons":{
+		"32": "/icons/icon-32.png",
+		"64": "/icons/icon-64.png",
+		"128": "/icons/icon-128.png"
+	},
+	"locales": {
+		"hu": {
+			"description": "Ez egy Simon Says memóriajáték. A négy színes gomb közül egyet vagy többet véletlenszerűen felvillant az alkalmazás, majd a játékosnak ugyan olyan sorrendben meg kell érintenie őket."
+		}
+	},
+	"default_locale": "en",
+	"orientation": "portrait"
+}

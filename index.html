@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Simon Says memory game</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<meta name="theme-color" content="#182240">
+
+	<link href="gaia/style/switches.css" rel="stylesheet" type="text/css">
+	<link href="gaia/style/icons.css" rel="stylesheet" type="text/css">
+	<link href="gaia/style/lists.css" rel="stylesheet" type="text/css">
+	<link href="style/simon.css" rel="stylesheet" type="text/css">
+	<link rel="resource" type="application/l10n" href="locales/locales.ini" />
+
+	<script src="js/l10n.js"></script>
+	<script src="js/jquery-1.4.2.min.js"></script>
+	<script src="js/simon.js"></script>
+
+</head>
+<body role="application">
+
+	<div class="content-wrapper">
+
+		<div class="settings settingsbg"></div>
+		<div class="settings settingscnt">
+			<section class="settings-inner" data-type="list">
+				<header data-l10n-id="options">Options</header>
+				<ul>
+					<li>
+						<aside class="pack-end">
+							<label class="pack-switch">
+								<input type="checkbox" class="auto-next-turn" checked="true">
+								<span></span>
+							</label>
+						</aside>
+						<p data-l10n-id="auto-next-turn">Auto next turn</p>
+					</li>
+				</ul>
+			</section>
+			<div class="author">Web app created by Botond Horvath<br>Source code avaible on <a href="https://github.com/Boti7/simon-game" target="_blank"><img src="GitHub-Mark-32px.png" style="width: 14px;"> GitHub</a></div>
+		</div>
+
+		<div class="simon-container">
+			<div class="simon-circle"></div>
+			<div class="simon-inner">
+				<div class="simon-btn-cnt">
+					<div id="blue" class="simon-btn" data-colorid="2"></div>
+					<div id="red" class="simon-btn" data-colorid="1"></div>
+				</div>
+				<div class="simon-btn-cnt">
+					<div id="yellow" class="simon-btn" data-colorid="3"></div>
+					<div id="green" class="simon-btn" data-colorid="4"></div>
+				</div>
+			</div>
+			<div class="start-bg">
+				<div class="start">
+					<span data-l10n-id="tap-to-start">Tap to start</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="round-info-cnt">
+			<div class="round-btn-cnt">
+				<button class="recommend next-round-btn" data-l10n-id="next">Next</button>
+				<button class="recommend quit-btn" data-l10n-id="exit">Exit</button>
+				<div class="status-text"></div>
+			</div>
+			
+			<div class="round-cnt">
+				<div class="current-round-cnt">
+					<div class="round-label"><b data-l10n-id="round">Round: </b></div>
+					<div class="round-value">1</div>
+				</div>
+
+				<div class="max-round-cnt">
+					<div class="max-round-label"><b data-l10n-id="max-round">Max round: </b></div>
+					<div class="max-round-value">0</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="menu-icon gaia-icon icon-settings"></div>
+		<div class="menu-close-icon gaia-icon icon-closecancel"></div>
+
+	</div>
+
+</body>
+</html>
